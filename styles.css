@@ -1,0 +1,92 @@
+h1{
+    font-size: 15rem;
+    color: rgb(190,128,126);
+}
+h6{
+    color: white;
+    top: 15.2rem;
+    left: 6.4rem;
+    font-size: 2rem;
+}
+.spin{
+    color: rgb(190,128,126);
+    width: 3rem;
+    height: 3rem;
+}
+
+
+
+
+
+
+.typing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 21.5rem;
+    width: 2px;
+    height: 90%;
+    background: rgb(190,128,126);
+    animation: cursorBlink 0.8s steps(3) infinite;
+}
+
+@keyframes cursorBlink {
+
+    0%,
+    75% {
+        opacity: 1;
+    }
+
+    76%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.typing {
+    position: relative;
+
+}
+
+.typing h5 {
+    position: relative;
+    color: rgb(190,128,126);
+    letter-spacing: 2px;
+    font-size: 2rem;
+    overflow: hidden;
+    margin-bottom: 0;
+    animation: type 5s steps(11) infinite;
+}
+
+@keyframes type {
+
+    0%,
+    100% {
+        width: 0px;
+    }
+
+    30%,
+    60% {
+        width: 11rem;
+    }
+}
+
+@media(max-width: 330px) {
+    .typing h5 {
+        font-size: 3rem;
+        animation: type 5s steps(10) infinite;
+    }
+
+    @keyframes type {
+
+        0%,
+        100% {
+            width: 0px;
+        }
+
+        30%,
+        60% {
+            width: 305px;
+        }
+    }
+}
